@@ -1,24 +1,30 @@
+body{
+    background-image: url(pics/bg.png);
+}
+
 .logo{
       position:absolute;
       top: 17px;
       left: 25px;
       z-index: 1;
-      width: 5%;
+      width: 7%;
 }
 
 .faculty{
+    background-color: transparent;
     float: left;
-    margin: 50px 10px 15px 50px;
+    margin: 50px 10px 15px 80px;
 }
 
 .right{
+    background-color: transparent;
     float: right;
     margin-right: 175px;
-    margin-top: 175px;
+    margin-top: 215px;
 }
 
 .loginBtn{
-    margin: 20px;
+    margin-left: 130px;
     padding: 10px 30px;
     color: white;
     background-color: #A20C0E;
