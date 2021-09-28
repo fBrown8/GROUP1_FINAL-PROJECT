@@ -1,0 +1,27 @@
+.logo{
+      position:absolute;
+      top: 17px;
+      left: 25px;
+      z-index: 1;
+      width: 5%;
+}
+
+.faculty{
+    float: left;
+    margin: 50px 10px 15px 50px;
+}
+
+.right{
+    
+}
+
+.loginBtn{
+    margin: 20px;
+    padding: 10px 30px;
+    color: white;
+    background-color: #A20C0E;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    border-radius: 3.69px;
+}
