@@ -12,7 +12,9 @@
 }
 
 .right{
-    
+    float: right;
+    margin-right: 175px;
+    margin-top: 175px;
 }
 
 .loginBtn{
