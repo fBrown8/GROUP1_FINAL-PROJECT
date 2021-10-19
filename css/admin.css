@@ -2,11 +2,10 @@ body{
 	margin: 0;
 	padding: 0;
 	font-family: "Roboto", sans-serif;
-   /*background: url(pics/bg.jpg) no-repeat;*/
-   background-attachment: fixed;
-   background-position: center;
-   background-size: cover;
-   background-color: #ededed;
+  	background-attachment: fixed;
+   	background-position: center;
+   	background-size: cover;
+   	background-color: #ededed;
 
 }
 
@@ -92,6 +91,7 @@ header{
 	transition-property: background;
 }
 
+
 .sideBar a:hover{
 	background: #A20C0E;
 	color: white;
@@ -101,8 +101,37 @@ header{
 	padding-right: 10px;
 }
 
+.sideBar .drop{
+	padding-right: 100px;
+	line-height: 60px;
+	text-decoration: none;
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+	color: black;
+	display: block;
+	border: none;
+	background: none;
+	width:100%;
+	cursor: pointer;
+	outline: none;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+.sideBar .drop:hover {
+	background: #A20C0E;
+	color: white;
+}
+
+.dropContainer {
+	display: none;
+	background: none;
+	margin-left: 50px;
+}
+
 .sideBar .dboard{
    background: #A20C0E;
+   color: white;
 }
 label #menuBtn{
 	z-index: 1;
@@ -119,7 +148,7 @@ label #menuBtn:hover{
 	color: white;
 }
 
-#check:checked ~.sideBar{
+#check:checked ~.sideBar {
 	left: -185px;
 }
 
@@ -131,6 +160,14 @@ label #menuBtn:hover{
 	font-size: 20px;
 	margin-left: 165px;
 	width: 100%;
+}
+
+#check:checked ~.sideBar .drop{
+	padding-left: 205px;
+}
+
+#check:checked ~.sideBar .drop span{
+	display: none;
 }
 
 #check{
@@ -151,6 +188,11 @@ label #menuBtn:hover{
 
 #check:checked ~ .sideBar .userInfo{
 	display: none;
+}
+
+.active {
+	background-color: #A20C0E;
+	color: white;
 }
 
 /* you can change it from here*/

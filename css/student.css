@@ -1,0 +1,158 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+  	background-attachment: fixed;
+   	background-position: center;
+   	background-size: cover;
+   	background-color: #ededed;
+
+}
+
+header{
+	position: fixed;
+	background: #A20C0E;
+	padding: 20px;
+	width: calc(100% - 0%);
+	top: 0;
+	height: 30px;
+}
+
+.leftArea img{
+	margin: 0;
+	padding-left: 30px;
+	width: 11%;
+}
+
+.logoutBtn{
+   padding: 7px;
+   background: white;
+   text-decoration: none;
+   float: right;
+   margin-top: 2px;
+   margin-right: 40px;
+   border-radius: 6px;
+   font-size: 15px;
+   font-weight: 600;
+   color: black;
+   transition: 0.5s;
+   transition-property: background;
+}
+
+.logoutBtn:hover{
+	background: black;
+	color: white;
+}
+
+.sideBar{
+	z-index: 1;
+	top: 0;
+	background: white;
+	margin-top: 70px;
+	padding-top: 30px;
+	position: fixed;
+	left: 0;
+	width: 250px;
+	height: calc(100% - 9%);
+	transition: 0.4s;
+	transition-property: left;
+	overflow-y: auto;
+}
+
+.userInfo{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.sideBar .userInfo .userIcon{
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	margin-bottom: 10px;
+}
+
+.sideBar .userInfo h4{
+	color: gray;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.sideBar a{
+	color: black;
+	display: block;
+	width: 100%;
+	line-height: 60px;
+	text-decoration: none;
+	padding-left: 40px;
+	box-sizing: border-box;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+
+.sideBar a:hover{
+	background: #A20C0E;
+	color: white;
+}
+
+.sideBar i{
+	padding-right: 10px;
+}
+
+.sideBar .dboard{
+   background: #A20C0E;
+   color: white;
+}
+label #menuBtn{
+	z-index: 1;
+	color: black;
+	position: fixed;
+	cursor: pointer;
+	font-size: 20px;
+	margin: 5px 0;
+	transition: 0.5s;
+	transition-property: color;
+}
+
+label #menuBtn:hover{
+	color: white;
+}
+
+#check:checked ~.sideBar {
+	left: -185px;
+}
+
+#check:checked ~.sideBar a span{
+	display: none;
+}
+
+#check:checked ~.sideBar a{
+	font-size: 20px;
+	margin-left: 165px;
+	width: 100%;
+}
+
+#check{
+	display: none;
+}
+
+.content{
+	width: (100% - 250px);
+	margin-top: 60px;
+	padding: 20px;
+	margin-left: 250px;
+	transition: 0.5s;
+}
+
+#check:checked ~.content{
+	margin-left: 60px;
+}
+
+#check:checked ~ .sideBar .userInfo{
+	display: none;
+}
+
+
+/* CONTENT AREA */
