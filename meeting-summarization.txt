@@ -1,0 +1,14 @@
+meeting summarization:
+
+adjustments:
+yung form ibabase sa evaluation form na pinoprovide ng deped
+
+admin pov
+1. gagawa bagong evaluation for teachers na admin ung mag eevaluate
+2. makikita ng admin yung evaluation separately
+ex. makikita ung evaluation per grade level, per student, per section sa prof na yon
+3. mag ccreate ng feature ng bagong evaluation form na lalabas sa dashboard ng student
+
+
+faculty pov
+1.mapakita yung strengths and weakness per category sa evaluation
