@@ -1,0 +1,42 @@
+data attributes
+
+log in 
+user: integer
+
+first 2 digits:
+admin - 00
+faculty - 01 
+student - 02
+
+
+first 2 digits after the - 
+faculty - 
+01 - male teacher
+02 - female teacher 
+
+student - 
+01 - grade one
+02 - grade two
+03 - grade three
+04 - grade four
+05 - grade five
+06 - grade six
+07 - grade seven
+08 - grade eight
+09 - grade nine
+10 - grade ten
+11 - grade eleven
+12 - grade twelve
+
+last 4 digits
+faculty - alphabetical ranking
+student - alphabetical ranking
+
+examples
+admin - 00-0001 ( as is format since admin should be the first one to have account ) 
+faculty - 01-020020 ( it means that the prof is female and the 20th in alphabetical ranking among the female profs )
+student - 02-120150 (it means that the student is in grade 12 and the 150th student among the grade level ) 
+
+passwords: string, atleast 8 characters needed
+
+
