@@ -1,0 +1,213 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+  	background-attachment: fixed;
+   	background-position: center;
+   	background-size: cover;
+   	background-color: #ededed;
+
+}
+
+header{
+	position: fixed;
+	background: #A20C0E;
+	padding: 20px;
+	width: calc(100% - 0%);
+	top: 0;
+	height: 30px;
+}
+
+.leftArea img{
+	margin: 0;
+	padding-left: 30px;
+	width: 11%;
+}
+
+.logoutBtn{
+   padding: 7px;
+   background: white;
+   text-decoration: none;
+   float: right;
+   margin-top: 2px;
+   margin-right: 40px;
+   border-radius: 6px;
+   font-size: 15px;
+   font-weight: 600;
+   color: black;
+   transition: 0.5s;
+   transition-property: background;
+}
+
+.logoutBtn:hover{
+	background: black;
+	color: white;
+}
+
+.content{
+	width: (100% - 250px);
+	margin-top: 60px;
+	padding: 20px;
+	transition: 0.5s;
+}
+
+/* CONTENT */
+
+.main-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+      
+form {
+      width: 100%;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 2px 5px #ccc; 
+      }
+      
+h1 {
+      font-weight: 400;
+      line-height: 28px;
+      }
+      
+hr {
+      margin: 20px 0;
+      }
+      
+span.required {
+      color: red;
+      }
+      
+.statements-block
+	  {
+		  font-weight:bold;
+	  }
+    
+.personal-details, .question-block, .statements-block {
+      padding-bottom: 20px;
+      }
+      
+.personal-details >div {
+      display: flex;
+      flex-direction: column;
+      }
+      
+input {
+      padding: 8px 5px;
+      margin-bottom: 10px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      outline: none;
+      vertical-align: middle;
+      }
+      
+input:hover, textarea:hover {
+      outline: none;
+      border: 1px solid #e69500;
+      }
+      
+.question, .answer, table, textarea {
+      width: 100%;
+      }
+      
+.answer input, table input {
+      width: auto;
+      }
+      
+th, td {
+      width: 14%;
+      padding: 10px 0;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+      vertical-align: unset;
+      line-height: 18px;
+      font-weight: 400;
+      word-break: break-all;
+      }
+      
+.first-col {
+      width: 30%;
+      text-align: left;
+      }
+      
+small {
+      display: block;
+      line-height: 18px;
+      opacity: 0.5;
+      }
+      
+.second-col {
+      width: 30%;
+      text-align: left;
+      }
+      
+small {
+      display: block;
+      line-height: 18px;
+      opacity: 0.5;
+      }
+      
+.third-col {
+      width: 30%;
+      text-align: left;
+      }
+      
+small {
+      display: block;
+      line-height: 18px;
+      opacity: 0.5;
+      }
+	  
+.btn-block {
+      text-align: center;
+      }
+      
+      
+button {
+      width: 150px;
+      padding: 10px;
+      border-radius: 5px; 
+      border: none;
+      background: #A20C0E; 
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      }
+      
+button:hover {
+      background: #ededed;
+      color: black;
+      }
+      
+@media (min-width: 568px) {
+      .personal-details >div {
+      flex-direction: row;
+      align-items: center;
+      }
+      
+label {
+      width: 95px;
+      }
+      
+input {
+      width: calc((100% - 130px)/2);
+      }
+      
+input.first-name, input.seminar-title {
+      margin: 0 5px 10px;
+      }
+      
+.question-block {
+      display: flex;
+      justify-content: space-between;
+      }
+      
+.question, .answer {
+      width: 50%;
+      }
+      
+th, td {
+      word-break: keep-all;
+      }
+}
