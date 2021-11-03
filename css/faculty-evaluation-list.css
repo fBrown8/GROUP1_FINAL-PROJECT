@@ -101,7 +101,7 @@ header{
 	padding-right: 10px;
 }
 
-.sideBar .dboard{
+.sideBar .rcord{
    background: #A20C0E;
    color: white;
 }
@@ -154,5 +154,53 @@ label #menuBtn:hover{
 	display: none;
 }
 
+/* CONTENT */
+.dashboard-cards{
+	display: block;
+ }
 
-/* CONTENT AREA */
+.column {
+	float: left;
+	width: auto;
+	padding: 0 10px 10px;
+}
+  
+.row {
+	margin: 0 -5px;
+}
+  
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+  
+@media screen and (max-width: 600px) {
+	.column {
+	  width: 100%;
+	  display: block;
+	  margin-bottom: 20px;
+	}
+}
+  
+.card {
+	padding: 17px;
+	text-align: center;
+	background-color: white;
+	color: #000;
+	border-radius: 3px;
+    cursor: pointer;
+}
+
+.column .card h2{
+	text-align: center;
+}
+
+.card img{
+	width: 100px;
+    margin: 0;
+}
+
+.eval-status{
+    line-height: normal;
+}
