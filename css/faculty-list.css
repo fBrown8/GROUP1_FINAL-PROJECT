@@ -118,11 +118,6 @@ header{
 	transition-property: background;
 }
 
-#faculty{
-    background-color: #A20C0E;
-    color: white;
-}
-
 .sideBar .drop:hover {
 	background: #A20C0E;
 	color: white;
@@ -206,13 +201,6 @@ label #menuBtn:hover{
 }
 
 /* CONTENT */
-
-.main-block {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 h1 {
 	font-weight: 400;
 	line-height: 28px;
@@ -221,61 +209,40 @@ h1 {
 hr {
 	margin: 20px 0;
 }
-	
-form {
-	width: 100%;
-	padding: 20px;
-	background: #fff;
-	box-shadow: 0 2px 5px #ccc; 
+
+.faculty-table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.faculty-table thead tr {
+    background-color: #A20C0E;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+  
+.faculty-table th, .faculty-table td {
+    padding: 12px 70px;
+}
+  
+.faculty-table tbody tr {
+    border-bottom: 1px solid #dddddd;
 }
 
-input, label {
-    display: block;
-}
-	
-input {
-	width: 500px;
-}
-
-	
-input[type="text"]{
-	padding: 8px 5px;
-	margin-bottom: 10px;
-	border-radius: 3px;
-	border: 1px solid #ccc;
-	outline: none;
-	vertical-align: middle;
+.faculty-table span{
+	background-color: gray;
+	color: white;
+	font-weight: normal;
+	cursor: pointer;
+	padding: 4px;
 }
 
-input[type="text"]:hover{
-	outline: none;
-	border: 1px solid #e69500;
-}
-
-input[type = "file"]{
-	border: none;
-	outline: none;
-}
-
-br{
-	clear: both;
-}
-
-.input-name{
-	float:left;
-	margin-right:20px;
-	
-}
-
-.input-subject{
-	float: left;
-	margin-left: 55px;
-}
-
-.btn-block {
-	text-align: center;
-}
-
-section{
-	display: flex;
+.faculty-table .buttons{
+	text-align: left;
 }

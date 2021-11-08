@@ -101,7 +101,45 @@ header{
 	padding-right: 10px;
 }
 
-.sideBar .rcord{
+.sideBar .drop{
+	padding-right: 100px;
+	line-height: 60px;
+	text-decoration: none;
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+	color: black;
+	display: block;
+	border: none;
+	background: none;
+	width:100%;
+	cursor: pointer;
+	outline: none;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+#student{
+    background-color: #A20C0E;
+    color: white;
+}
+
+.sideBar .drop:hover {
+	background: #A20C0E;
+	color: white;
+}
+
+.sideBar .drop.active{
+    background-color: #A20C0E;
+    color: white;
+}
+
+.dropContainer {
+	display: none;
+	background: none;
+	margin-left: 50px;
+}
+
+.sideBar .dboard{
    background: #A20C0E;
    color: white;
 }
@@ -134,6 +172,14 @@ label #menuBtn:hover{
 	width: 100%;
 }
 
+#check:checked ~.sideBar .drop{
+	padding-left: 205px;
+}
+
+#check:checked ~.sideBar .drop span{
+	display: none;
+}
+
 #check{
 	display: none;
 }
@@ -154,57 +200,96 @@ label #menuBtn:hover{
 	display: none;
 }
 
+.active {
+	background-color: #A20C0E;
+	color: white;
+}
+
 /* CONTENT */
-.dashboard-cards{
-	display: block;
- }
 
-.column {
-	float: left;
-	width: auto;
-	padding: 0 10px 10px;
+.main-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.column a{
-	text-decoration: none;
+h1 {
+	font-weight: 400;
+	line-height: 28px;
 }
-  
-.row {
-	margin: 0 -5px;
+	
+hr {
+	margin: 20px 0;
 }
-  
-.row:after {
-	content: "";
-	display: table;
+	
+form {
+	width: 100%;
+	padding: 20px;
+	background: #fff;
+	box-shadow: 0 2px 5px #ccc; 
+}
+
+input, label {
+    display: block;
+}
+	
+input {
+	width: 500px;
+}
+
+	
+input[type="text"]{
+	padding: 8px 5px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	outline: none;
+	vertical-align: middle;
+}
+
+input[type="text"]:hover{
+	outline: none;
+	border: 1px solid #e69500;
+}
+
+input[type="password"]{
+	padding: 8px 5px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	outline: none;
+	vertical-align: middle;
+}
+
+input[type="password"]:hover{
+	outline: none;
+	border: 1px solid #e69500;
+}
+
+input[type = "file"]{
+	border: none;
+	outline: none;
+}
+
+br{
 	clear: both;
 }
-  
-@media screen and (max-width: 600px) {
-	.column {
-	  width: 100%;
-	  display: block;
-	  margin-bottom: 20px;
-	}
-}
-  
-.card {
-	padding: 17px;
-	text-align: center;
-	background-color: white;
-	color: #000;
-	border-radius: 3px;
-    cursor: pointer;
+
+.input-name{
+	float:left;
+	margin-right:20px;
+	
 }
 
-.column .card h2{
+.input-subject{
+	float: left;
+	margin-left: 55px;
+}
+
+.btn-block {
 	text-align: center;
 }
 
-.card img{
-	width: 100px;
-    margin: 0;
-}
-
-.eval-status{
-    line-height: normal;
+section{
+	display: flex;
 }

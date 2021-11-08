@@ -229,6 +229,7 @@ label #menuBtn:hover{
 	border-radius: 3px;
 }
 
-.card h3{
+.card h3, h4{
 	text-align: left;
+	line-height: 5px;
 }

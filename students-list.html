@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Dashboard </title>
+	<title> Faculty List </title>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-	<link rel="stylesheet" type="text/css" href="css/admin.css">
+	<link rel="stylesheet" type="text/css" href="css/students-list.css">
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha/css/bootstrap.min.css">
 <body>
 	<input type="checkbox" id="check" checked="false">
 	<!--header area start-->
@@ -44,50 +46,48 @@
 
 <!-- CONTENT AREA -->
 <div class = "content">
-   <div class = "titleBar">
-	   <h2>Dashboard</h2>
-   </div>
-<!--Dashboard Cards-->
-<div class = "dashboard-cards">
-	<div class = "cards-single">
-		<div class = "card-body">
-			<h3>Welcome Admin!</h3>
-			<div class = "block">
-			  <p>Academic Year 2020 - 2021: 2nd Semester</p>
-			</div>
-		</div>
- 	</div>
+	<h1>Students List</h1>
+		<hr>
+
+		<table class="faculty-table">
+			<thead>
+			  <tr>
+				<th>Student ID</th>
+				<th>Last Name</th>
+				<th>First Name</th>
+				<th>Section</th>
+				<th>Action</th>
+			  </tr>
+			</thead>
+			<tbody>
+			<!--INSERT DATABASE CODE HERE-->
+			<!--TEMPLATE LANG TONG NASA BABA-->
+			  <tr>
+				<td>01-123456</td>
+				<td>Smith</td>
+				<td>Will</td>
+				<td>ICS2609</td>
+				<td class="buttons">
+					<span class="btn-row-view">View</span>
+					<span class="btn-row-edit">Edit</span>
+					<span class="btn-row-delete">Delete</span>
+				</td>			
+			  </tr>
+			  <tr>
+				<td>01-654321</td>
+				<td>Man</td>
+				<td>Spider</td>
+				<td>IS26310</td>
+				<td class="buttons">
+					<span class="btn-row-view">View</span>
+					<span class="btn-row-edit">Edit</span>
+					<span class="btn-row-delete">Delete</span>
+				</td>
+			  </tr>
+			</tbody>
+		  </table>
+<script src = "js/table.js"></script>
 </div>
-	<!--Bottom Cards-->
-	<br>
-	<div class="row">
-		<div class="column">
-		  <div class="card">
-			<h3>150</h3>
-			<h4>Total Students</h4>
-		  </div>
-		</div>
-	  
-		<div class="column">
-		  <div class="card">
-			<h3>[Number]</h3>
-			<h4>Total Faculty</h4>
-		  </div>
-		</div>
-		
-		<div class="column">
-		  <div class="card">
-			<h3>[Number]</h3>
-			<h4>Total Classes</h4>
-		  </div>
-		</div>
-		<div class="column">
-		  <div class="card">
-			<h3>[Number]</h3>
-			<h4>Total Users</h4>
-		  </div>
-		</div>
-	  </div>
 
 
 <!--CONTENT AREA END-->

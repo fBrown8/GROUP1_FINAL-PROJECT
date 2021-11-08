@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-	<link rel="stylesheet" type="text/css" href="css/create-new.css">
+	<link rel="stylesheet" type="text/css" href="css/create-new-student.css">
     <title>Create New</title>
 </head>
 <body>
@@ -35,7 +35,7 @@
 				<a href="new-faculty.html">Create New</a>
 				<a href="#">Faculty List</a>
 			  </div>
-			<button class="drop"><i class="fas fa-user-graduate"></i><span>Students</span></button>
+			<button class="drop" id="student"><i class="fas fa-user-graduate"></i><span>Students</span></button>
 			  <div class="dropContainer">
 				<a href="#">Create New</a>
 				<a href="#">Students List</a>
@@ -48,18 +48,18 @@
 <!-- CONTENT AREA -->
 <div class = "content">
 	<div class="main-block">
-		<form action="Dashboard.htm" onsubmit="myFunc()">
+		<form action="#" onsubmit="myFunc()">
 		<h1>Add New Student</h1>
 		<hr>
 		<section>
 		  <div class="input-name">
 			<label for="name">First Name</label>
-			<input id="name" type="text" value="" name="name" placeholder="Enter First Name" required>
+			<input id="name" type="text" value="" name="fname" placeholder="Enter First Name" required>
 		  </div>
 		
 		  <div class="input-subject">
 			<label for="email">Last Name</label>
-			<input id="email" type="text" value="" name="email" placeholder="Enter Last Name" required>
+			<input id="email" type="text" value="" name="lname" placeholder="Enter Last Name" required>
 		  </div>
 		  <br>
 		</section>
@@ -67,17 +67,17 @@
 		<section>
 			<div class="input-name">
 				<label for="name">Student ID</label>
-				<input id="name" type="text" value="" name="name" placeholder="Enter Student ID" required> 
+				<input id="name" type="text" value="" name="id" placeholder="Enter Student ID" required> 
 			  </div>
 			  <div class="input-subject">
 				<label for="email">Class/Section</label>
-				<input id="email" type="text" value="" name="email" placeholder="Enter Class/Section" required>
+				<input id="email" type="text" value="" name="section" placeholder="Enter Class/Section" required>
 			  </div>
 			  <br>
 		</section>
 		<div>
             <label for="email">Password</label>
-				<input id="email" type="text" value="" name="email" placeholder="Enter Password" required>
+				<input id="email" type="password" value="" name="password" placeholder="Enter Password" required>
 			<label>Profile Picture</label>
 				<input type="file" name="file">
 		</div>
