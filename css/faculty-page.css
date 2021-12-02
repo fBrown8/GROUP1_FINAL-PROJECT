@@ -101,7 +101,7 @@ header{
 	padding-right: 10px;
 }
 
-.sideBar .dboard{
+.sideBar .overview{
    background: #A20C0E;
    color: white;
 }
@@ -156,3 +156,36 @@ label #menuBtn:hover{
 
 
 /* CONTENT AREA */
+.perf-overview{
+	margin-left: 55px;
+	margin-top: 25px;
+	background-color: #ffffff;
+	width: 90%;
+	height: 50vh;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.results{
+	display: inline-block;
+	margin-left: 43px;
+}
+
+.gen-btn{
+	margin-left: 25px;
+    padding: 10px 30px;
+    background-color: #8a080a;
+    color: white;
+    border: none;
+    cursor: pointer;
+	font-weight: bold;
+}
+
+#select-category{
+	width: 200px;
+	padding: 8px 5px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	outline: none;
+}
+
