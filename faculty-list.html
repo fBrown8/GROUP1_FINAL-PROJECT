@@ -45,46 +45,45 @@
 <!--Pop up form-->
 	<div class="modal-container" id="modal_container">
 		<div class="modal">
-			<div class="main-block">
-				<form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+				<form>
+					<h3>Add New Faculty</h3>
 				<section>
-				  <div class="input-name">
-					<label for="name">First Name</label>
-					<input id="name" type="text" value="" name="fname" placeholder="Enter First Name" required>
+				  <div class="input-left">
+					<label for="lname">First Name</label>
+					<input id="fname" type="text" value="" name="fname" placeholder="Enter First Name" required>
 				  </div>
 				
-				  <div class="input-subject">
-					<label for="email">Last Name</label>
-					<input id="email" type="text" value="" name="lname" placeholder="Enter Last Name" required>
+				  <div class="input-right">
+					<label for="lname">Last Name</label>
+					<input id="lname" type="text" value="" name="lname" placeholder="Enter Last Name" required>
 				  </div>
 				  <br>
 				</section>
 				
 				<section>
-					<div class="input-name">
-						<label for="name">Faculty ID</label>
-						<input id="name" type="text" value="" name="id" placeholder="Enter Faculty ID" required> 
+					<div class="input-left">
+						<label for="facultyID">Faculty ID</label>
+						<input id="facultyID" type="text" value="" name="id" placeholder="Enter Faculty ID" required> 
 					  </div>
-					  <div class="input-subject">
-						<label for="email">Subject</label>
-						<input id="email" type="text" value="" name="subject" placeholder="Enter Subject" required>
+					  <div class="input-right">
+						<label for="subject">Subject</label>
+						<input id="subject" type="text" value="" name="subject" placeholder="Enter Subject" required>
 					  </div>
 					  <br>
 				</section>
 				<div>
-					<label for="email">Password</label>
-						<input id="email" type="password" value="" name="password" placeholder="Enter Password" required>
+					<label for="password">Password</label>
+						<input id="password" type="password" value="" name="password" placeholder="Enter Password" required>
 					<label>Profile Picture</label>
 						<input type="file" name="file">
 				</div>
-		
+				<br>
 				<div class="btn-block">
 					<button class="cancel-btn" id = "close" type="submit">Cancel</button>
 					<button class="submit-btn" type="submit">Submit</button>
 				</div>
 		
 				</form>
-			  </div>
 		</div>
 	</div>
 	<script src="js/add-new-form.js"></script>

@@ -267,7 +267,6 @@ h1 {
 }
 	
 form {
-	width: 100%;
 	padding: 20px;
 	background: #fff;
 	box-shadow: 0 2px 5px #ccc; 
@@ -321,13 +320,13 @@ br{
 	clear: both;
 }
 
-.input-name{
+.input-left{
 	float:left;
 	margin-right:20px;
 	
 }
 
-.input-subject{
+.input-right{
 	float: left;
 	margin-left: 55px;
 }
@@ -375,16 +374,6 @@ section{
 .modal-container.show{
 	pointer-events: auto;
 	opacity: 1;
-}
-
-.modal{
-	background-color: #fff;
-	border-radius: 5px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-	padding: 30px 50px;
-	width: 600px;
-	max-width: 100%;
-	text-align: center;
 }
 
 /* PAGINATION */

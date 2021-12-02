@@ -238,14 +238,7 @@ h1 {
 }
 
 /* MODAL-FORM */
-.main-block {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-	
 form {
-	width: 100%;
 	padding: 20px;
 	background: #fff;
 	box-shadow: 0 2px 5px #ccc; 
@@ -263,36 +256,13 @@ input {
 	width: 200px;
 }
 
-	
-input[type="text"]{
+#select-category{
 	padding: 8px 5px;
 	margin-bottom: 10px;
 	border-radius: 3px;
 	border: 1px solid #ccc;
 	outline: none;
-}
-
-input[type="text"]:hover{
-	outline: none;
-	border: 1px solid #979797;
-}
-
-input[type="password"]{
-	padding: 8px 5px;
-	margin-bottom: 10px;
-	border-radius: 3px;
-	border: 1px solid #ccc;
-	outline: none;
-}
-
-input[type="password"]:hover{
-	outline: none;
-	border: 1px solid #979797;
-}
-
-input[type = "file"]{
-	border: none;
-	outline: none;
+	width: 375px;
 }
 
 br{
@@ -312,10 +282,6 @@ br{
 
 .btn-block {
 	text-align: center;
-}
-
-section{
-	display: flex;
 }
 
 .submit-btn{
@@ -353,14 +319,4 @@ section{
 .modal-container.show{
 	pointer-events: auto;
 	opacity: 1;
-}
-
-.modal{
-	background-color: #fff;
-	border-radius: 5px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-	padding: 30px 50px;
-	width: 600px;
-	max-width: 100%;
-	text-align: center;
 }

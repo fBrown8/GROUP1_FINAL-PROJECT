@@ -265,14 +265,7 @@ hr {
 }
 
 /* MODAL-FORM */
-.main-block {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-	
 form {
-	width: 100%;
 	padding: 20px;
 	background: #fff;
 	box-shadow: 0 2px 5px #ccc; 
@@ -352,7 +345,7 @@ section{
     color: white;
     border: none;
     cursor: pointer;
-  }
+}
 
 .cancel-btn{
     margin-left: 5px;
@@ -380,16 +373,6 @@ section{
 .modal-container.show{
 	pointer-events: auto;
 	opacity: 1;
-}
-
-.modal{
-	background-color: #fff;
-	border-radius: 5px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-	padding: 30px 50px;
-	width: 600px;
-	max-width: 100%;
-	text-align: center;
 }
 
 /* PAGINATION */

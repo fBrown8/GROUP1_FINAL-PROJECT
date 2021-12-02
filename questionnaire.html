@@ -41,46 +41,32 @@
 <!--Pop up form-->
 <div class="modal-container" id="modal_container">
     <div class="modal">
-        <div class="main-block">
-            <form action="#" onsubmit="myFunc()">
+            <form>
+            <h3>Add New Question</h3>
             <section>
-              <div class="input-name">
-                <label for="name">First Name</label>
-                <input id="name" type="text" value="" name="fname" placeholder="Enter First Name" required>
+              <div class="category">
+                <span>Category</span><br>
+                <select id="select-category">
+                  <option class="lesson" value="lesson">Lesson Planning and Delivery</option>
+                  <option class="technical" value="technical">Technical Assistance</option>
+                  <option class = "char" value="characteristics">Characteristics</option>
+                </select>
               </div>
-            
-              <div class="input-subject">
-                <label for="email">Last Name</label>
-                <input id="email" type="text" value="" name="lname" placeholder="Enter Last Name" required>
-              </div>
-              <br>
             </section>
-            
+
             <section>
-                <div class="input-name">
-                    <label for="name">Faculty ID</label>
-                    <input id="name" type="text" value="" name="id" placeholder="Enter Faculty ID" required> 
-                  </div>
-                  <div class="input-subject">
-                    <label for="email">Subject</label>
-                    <input id="email" type="text" value="" name="subject" placeholder="Enter Subject" required>
-                  </div>
-                  <br>
+              <div class="question">
+                <span>Question</span><br>
+                <textarea name="" id="" cols="48" rows="4">Enter question here...</textarea>
+              </div>
             </section>
-            <div>
-                <label for="email">Password</label>
-                    <input id="email" type="password" value="" name="password" placeholder="Enter Password" required>
-                <label>Profile Picture</label>
-                    <input type="file" name="file">
-            </div>
-    
+            <br>
             <div class="btn-block">
                 <button class="cancel-btn" id = "close" type="submit">Cancel</button>
-                <button class="submit-btn" type="submit">Submit</button>
+                <button class="submit-btn" type="submit">Add</button>
             </div>
     
             </form>
-          </div>
     </div>
 </div>
 <script src="js/add-new-form.js"></script>
@@ -103,7 +89,6 @@
             </tr>
         </tbody>
       </table>
-<!--insert script for search bar-->
 
 </div>
 
