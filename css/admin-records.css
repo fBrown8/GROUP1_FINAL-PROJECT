@@ -24,26 +24,6 @@ header{
 	width: 11%;
 }
 
-.logoutBtn{
-   padding: 7px;
-   background: white;
-   text-decoration: none;
-   float: right;
-   margin-top: 2px;
-   margin-right: 40px;
-   border-radius: 6px;
-   font-size: 15px;
-   font-weight: 600;
-   color: black;
-   transition: 0.5s;
-   transition-property: background;
-}
-
-.logoutBtn:hover{
-	background: black;
-	color: white;
-}
-
 .sideBar{
 	z-index: 1;
 	top: 0;
@@ -118,11 +98,6 @@ header{
 	transition-property: background;
 }
 
-#student{
-    background-color: #A20C0E;
-    color: white;
-}
-
 .sideBar .drop:hover {
 	background: #A20C0E;
 	color: white;
@@ -139,7 +114,7 @@ header{
 	margin-left: 50px;
 }
 
-.sideBar .dboard{
+.sideBar .rcord{
    background: #A20C0E;
    color: white;
 }
@@ -205,91 +180,4 @@ label #menuBtn:hover{
 	color: white;
 }
 
-/* CONTENT */
-
-.main-block {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-h1 {
-	font-weight: 400;
-	line-height: 28px;
-}
-	
-hr {
-	margin: 20px 0;
-}
-	
-form {
-	width: 100%;
-	padding: 20px;
-	background: #fff;
-	box-shadow: 0 2px 5px #ccc; 
-}
-
-input, label {
-    display: block;
-}
-	
-input {
-	width: 500px;
-}
-
-	
-input[type="text"]{
-	padding: 8px 5px;
-	margin-bottom: 10px;
-	border-radius: 3px;
-	border: 1px solid #ccc;
-	outline: none;
-	vertical-align: middle;
-}
-
-input[type="text"]:hover{
-	outline: none;
-	border: 1px solid #e69500;
-}
-
-input[type="password"]{
-	padding: 8px 5px;
-	margin-bottom: 10px;
-	border-radius: 3px;
-	border: 1px solid #ccc;
-	outline: none;
-	vertical-align: middle;
-}
-
-input[type="password"]:hover{
-	outline: none;
-	border: 1px solid #e69500;
-}
-
-input[type = "file"]{
-	border: none;
-	outline: none;
-}
-
-br{
-	clear: both;
-}
-
-.input-name{
-	float:left;
-	margin-right:20px;
-	
-}
-
-.input-subject{
-	float: left;
-	margin-left: 55px;
-}
-
-.btn-block {
-	text-align: center;
-}
-
-section{
-	display: flex;
-}
+/* CONTENT AREA */

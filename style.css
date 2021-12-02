@@ -35,7 +35,7 @@ body{
     margin-top: 10px;
     padding: 10px 30px;
     color: white;
-    background-color: #A20C0E;
+    background-color: #8a080a;
     border: none;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
@@ -129,8 +129,5 @@ input[type="text"], input[type="password"]{
 @keyframes animatetop {
     from {top: 300px; opacity: 0}
     to {top: 0; opacity: 1}
-}
-#logo1 {
-      width: 35%;
 }
   

@@ -24,26 +24,6 @@ header{
 	width: 11%;
 }
 
-.logoutBtn{
-   padding: 7px;
-   background: white;
-   text-decoration: none;
-   float: right;
-   margin-top: 2px;
-   margin-right: 40px;
-   border-radius: 6px;
-   font-size: 15px;
-   font-weight: 600;
-   color: black;
-   transition: 0.5s;
-   transition-property: background;
-}
-
-.logoutBtn:hover{
-	background: black;
-	color: white;
-}
-
 .sideBar{
 	z-index: 1;
 	top: 0;
@@ -134,7 +114,7 @@ header{
 	margin-left: 50px;
 }
 
-.sideBar .student{
+.sideBar .questionnaire{
    background: #A20C0E;
    color: white;
 }
@@ -200,14 +180,10 @@ label #menuBtn:hover{
 	color: white;
 }
 
-/* CONTENT */
+/* CONTENT AREA */
 h1 {
 	font-weight: 400;
 	line-height: 28px;
-}
-	
-hr {
-	margin: 20px 0;
 }
 
 .faculty-table {
@@ -247,16 +223,13 @@ hr {
 	text-align: left;
 }
 
-
 .add-new-btn{
-	margin-left: 600px;
+	margin: 0 0 10px 80%;
 	background-color: #A20C0E;
 	padding: 10px 30px;
     color: white;
     border: none;
     cursor: pointer;
-	display: inline-flex;
-	position: absolute;
 }
 
 .search-bar{
@@ -390,56 +363,4 @@ section{
 	width: 600px;
 	max-width: 100%;
 	text-align: center;
-}
-
-/* PAGINATION */
-.pagination{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 10px;
-}
-.pagination ul{
-	display: flex;
-	background: #dddddd;
-	padding: 3px;
-	border-radius: 50px;
-}
-
-.pagination ul li{
-	list-style: none;
-	line-height: 45px;
-	text-align: center;
-	border-radius: 50%;
-	cursor: pointer;
-	transition: all 0.3s ease;
-}
-
-.pagination ul li.num{
-	height: 45px;
-	width: 45px;
-}
-
-.pagination ul li.dots{
-	font-size: 22px;
-	cursor: default;
-}
-
-.pagination ul li.btn{
-	padding: 0 20px;
-}
-
-.pagination ul li.prev{
-	border-radius: 25px 5px 5px 25px;
-}
-
-.pagination ul li.next{
-	border-radius: 5px 25px 25px 5px;
-}
-
-.pagination ul li.active,
-.pagination ul li.num:hover,
-.pagination ul li.btn:hover{
-	background: #A20C0E;
-	color: #fff;
 }

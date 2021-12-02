@@ -24,26 +24,6 @@ header{
 	width: 11%;
 }
 
-.logoutBtn{
-   padding: 7px;
-   background: white;
-   text-decoration: none;
-   float: right;
-   margin-top: 2px;
-   margin-right: 40px;
-   border-radius: 6px;
-   font-size: 15px;
-   font-weight: 600;
-   color: black;
-   transition: 0.5s;
-   transition-property: background;
-}
-
-.logoutBtn:hover{
-	background: black;
-	color: white;
-}
-
 .sideBar{
 	z-index: 1;
 	top: 0;
