@@ -38,7 +38,55 @@
 
 <!-- CONTENT AREA -->
 <div class = "content">
-	
+	<h1>Records</h1>
+	<hr>
+	<div class="search">
+		
+		<span>School Year</span>
+		<select id="select-category">
+		  <option class="sy1" value="lesson">2020-2021</option>
+		</select>
+
+		<span>Semester</span>
+		<select id="select-category">
+		  <option class="sem1" value="sem1">1st Semester</option>
+		  <option class="sem1" value="sem1">2nd Semester</option>
+		</select>
+
+		<span>Faculty Name</span>
+		<select id="select-category">
+			<option class="sample" value="sample">Sample Option</option>
+		  <!--Yung options kukunin from the faculty names sa database-->
+		</select>
+
+		<button class="search-btn">Search</button>
+	  </div>
+
+	  <!--TABLE-->
+		<table class="records-table" id = "table">
+			<thead>
+			  <tr>
+				<th>Faculty ID</th>
+				<th>Faculty Name</th>
+				<th>School Year</th>
+				<th>Semester</th>
+				<th>Action</th>
+			  </tr>
+			</thead>
+			<tbody>
+			<!--INSERT DATABASE CODE HERE-->
+			<tr>
+				<td colspan="5" align="center">No data available</td>
+			</tr>
+			</tbody>
+		  </table>
+
+<!--RECORDS BLOCK. Siguro dito nakadisplay yung record mismo-->
+<div class="record-block">
+	<br>
+	<p style="text-align:center;">No preview available</p>
+</div>
+
 </div>
 </body>
 </html>
