@@ -20,8 +20,8 @@ header{
 
 .leftArea img{
 	margin: 0;
-	padding-left: 30px;
-	width: 11%;
+	padding-left: 38px;
+	width: 45px;
 }
 
 .logoutBtn{
@@ -150,7 +150,7 @@ label #menuBtn{
 }
 
 label #menuBtn:hover{
-	color: white;
+	color: #fff;
 }
 
 #check:checked ~.sideBar {
@@ -274,6 +274,7 @@ label #menuBtn:hover{
 	border-radius: 3px;
 }
 
-.card h3{
+.card h3, h4{
 	text-align: left;
+	line-height: 5px;
 }

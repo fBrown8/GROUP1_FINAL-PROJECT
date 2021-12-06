@@ -24,26 +24,6 @@ header{
 	width: 11%;
 }
 
-.logoutBtn{
-   padding: 7px;
-   background: white;
-   text-decoration: none;
-   float: right;
-   margin-top: 2px;
-   margin-right: 40px;
-   border-radius: 6px;
-   font-size: 15px;
-   font-weight: 600;
-   color: black;
-   transition: 0.5s;
-   transition-property: background;
-}
-
-.logoutBtn:hover{
-	background: black;
-	color: white;
-}
-
 .sideBar{
 	z-index: 1;
 	top: 0;
@@ -118,11 +98,6 @@ header{
 	transition-property: background;
 }
 
-#faculty{
-    background-color: #A20C0E;
-    color: white;
-}
-
 .sideBar .drop:hover {
 	background: #A20C0E;
 	color: white;
@@ -139,7 +114,7 @@ header{
 	margin-left: 50px;
 }
 
-.sideBar .dboard{
+.sideBar .questionnaire{
    background: #A20C0E;
    color: white;
 }
@@ -205,56 +180,89 @@ label #menuBtn:hover{
 	color: white;
 }
 
-/* CONTENT */
-
-.main-block {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
+/* CONTENT AREA */
 h1 {
 	font-weight: 400;
 	line-height: 28px;
 }
-	
-hr {
-	margin: 20px 0;
+
+.faculty-table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
 }
-	
+  
+.faculty-table thead tr {
+    background-color: #A20C0E;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+  
+.faculty-table th, .faculty-table td {
+    padding: 12px 70px;
+}
+  
+.faculty-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.faculty-table span{
+	background-color: gray;
+	color: white;
+	font-weight: normal;
+	cursor: pointer;
+	padding: 4px;
+}
+
+.faculty-table .buttons{
+	text-align: left;
+}
+
+.add-new-btn{
+	margin: 0 0 10px 80%;
+	background-color: #A20C0E;
+	padding: 10px 30px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar{
+	display: inline;
+	margin-left: 43px;
+}
+
+/* MODAL-FORM */
 form {
-	width: 100%;
 	padding: 20px;
 	background: #fff;
 	box-shadow: 0 2px 5px #ccc; 
 }
 
-input, label {
-    display: block;
+input, label{
+	display: block;
+}
+
+label{
+	text-align: left;
 }
 	
 input {
-	width: 500px;
+	width: 200px;
 }
 
-	
-input[type="text"]{
+#select-category{
 	padding: 8px 5px;
 	margin-bottom: 10px;
 	border-radius: 3px;
 	border: 1px solid #ccc;
 	outline: none;
-	vertical-align: middle;
-}
-
-input[type="text"]:hover{
-	outline: none;
-	border: 1px solid #e69500;
-}
-
-input[type = "file"]{
-	border: none;
-	outline: none;
+	width: 375px;
 }
 
 br{
@@ -276,6 +284,39 @@ br{
 	text-align: center;
 }
 
-section{
+.submit-btn{
+    margin-left: 20px;
+    padding: 10px 30px;
+    background-color: #8a080a;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+.cancel-btn{
+    margin-left: 5px;
+    padding: 10px 30px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+.modal-container{
+	background-color: rgba(0, 0, 0, 0.3);
+	position: fixed;
 	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.3s ease;
+}
+
+.modal-container.show{
+	pointer-events: auto;
+	opacity: 1;
 }

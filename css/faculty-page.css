@@ -101,7 +101,7 @@ header{
 	padding-right: 10px;
 }
 
-.sideBar .rcord{
+.sideBar .overview{
    background: #A20C0E;
    color: white;
 }
@@ -154,57 +154,38 @@ label #menuBtn:hover{
 	display: none;
 }
 
-/* CONTENT */
-.dashboard-cards{
-	display: block;
- }
 
-.column {
-	float: left;
-	width: auto;
-	padding: 0 10px 10px;
+/* CONTENT AREA */
+.perf-overview{
+	margin-left: 55px;
+	margin-top: 25px;
+	background-color: #ffffff;
+	width: 90%;
+	height: 50vh;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-.column a{
-	text-decoration: none;
+.results{
+	display: inline-block;
+	margin-left: 43px;
 }
-  
-.row {
-	margin: 0 -5px;
-}
-  
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-  
-@media screen and (max-width: 600px) {
-	.column {
-	  width: 100%;
-	  display: block;
-	  margin-bottom: 20px;
-	}
-}
-  
-.card {
-	padding: 17px;
-	text-align: center;
-	background-color: white;
-	color: #000;
-	border-radius: 3px;
+
+.gen-btn{
+	margin-left: 25px;
+    padding: 10px 30px;
+    background-color: #8a080a;
+    color: white;
+    border: none;
     cursor: pointer;
+	font-weight: bold;
 }
 
-.column .card h2{
-	text-align: center;
+#select-category{
+	width: 200px;
+	padding: 8px 5px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	outline: none;
 }
 
-.card img{
-	width: 100px;
-    margin: 0;
-}
-
-.eval-status{
-    line-height: normal;
-}
