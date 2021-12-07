@@ -1,0 +1,429 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+  	background-attachment: fixed;
+   	background-position: center;
+   	background-size: cover;
+   	background-color: #ededed;
+
+}
+
+header{
+	position: fixed;
+	background: #A20C0E;
+	padding: 20px;
+	width: calc(100% - 0%);
+	top: 0;
+	height: 30px;
+}
+
+.leftArea img{
+	margin: 0;
+	padding-left: 30px;
+	width: 11%;
+}
+
+.logoutBtn{
+   padding: 7px;
+   background: white;
+   text-decoration: none;
+   float: right;
+   margin-top: 2px;
+   margin-right: 40px;
+   border-radius: 6px;
+   font-size: 15px;
+   font-weight: 600;
+   color: black;
+   transition: 0.5s;
+   transition-property: background;
+}
+
+.logoutBtn:hover{
+	background: black;
+	color: white;
+}
+
+.sideBar{
+	z-index: 1;
+	top: 0;
+	background: white;
+	margin-top: 70px;
+	padding-top: 30px;
+	position: fixed;
+	left: 0;
+	width: 250px;
+	height: calc(100% - 9%);
+	transition: 0.4s;
+	transition-property: left;
+	overflow-y: auto;
+}
+
+.userInfo{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.sideBar .userInfo .userIcon{
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	margin-bottom: 10px;
+}
+
+.sideBar .userInfo h4{
+	color: gray;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.sideBar a{
+	color: black;
+	display: block;
+	width: 100%;
+	line-height: 60px;
+	text-decoration: none;
+	padding-left: 40px;
+	box-sizing: border-box;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+
+.sideBar a:hover{
+	background: #A20C0E;
+	color: white;
+}
+
+.sideBar i{
+	padding-right: 10px;
+}
+
+.sideBar .drop{
+	padding-right: 100px;
+	line-height: 60px;
+	text-decoration: none;
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+	color: black;
+	display: block;
+	border: none;
+	background: none;
+	width:100%;
+	cursor: pointer;
+	outline: none;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+.sideBar .drop:hover {
+	background: #A20C0E;
+	color: white;
+}
+
+.sideBar .drop.active{
+    background-color: #A20C0E;
+    color: white;
+}
+
+.dropContainer {
+	display: none;
+	background: none;
+	margin-left: 50px;
+}
+
+.sideBar .faculty{
+   background: #A20C0E;
+   color: white;
+}
+label #menuBtn{
+	z-index: 1;
+	color: black;
+	position: fixed;
+	cursor: pointer;
+	font-size: 20px;
+	margin: 5px 0;
+	transition: 0.5s;
+	transition-property: color;
+}
+
+label #menuBtn:hover{
+	color: white;
+}
+
+#check:checked ~.sideBar {
+	left: -185px;
+}
+
+#check:checked ~.sideBar a span{
+	display: none;
+}
+
+#check:checked ~.sideBar a{
+	font-size: 20px;
+	margin-left: 165px;
+	width: 100%;
+}
+
+#check:checked ~.sideBar .drop{
+	padding-left: 205px;
+}
+
+#check:checked ~.sideBar .drop span{
+	display: none;
+}
+
+#check{
+	display: none;
+}
+
+.content{
+	width: (100% - 250px);
+	margin-top: 60px;
+	padding: 20px;
+	margin-left: 250px;
+	transition: 0.5s;
+}
+
+#check:checked ~.content{
+	margin-left: 60px;
+}
+
+#check:checked ~ .sideBar .userInfo{
+	display: none;
+}
+
+.active {
+	background-color: #A20C0E;
+	color: white;
+}
+
+/* CONTENT */
+h1 {
+	font-weight: 400;
+	line-height: 28px;
+}
+
+.faculty-table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.faculty-table thead tr {
+    background-color: #A20C0E;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+  
+.faculty-table th, .faculty-table td {
+    padding: 12px 70px;
+}
+  
+.faculty-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.faculty-table span{
+	background-color: gray;
+	color: white;
+	font-weight: normal;
+	cursor: pointer;
+	padding: 4px;
+}
+
+.faculty-table .buttons{
+	text-align: left;
+}
+
+.add-new-btn{
+	margin-left: 600px;
+	background-color: #A20C0E;
+	padding: 10px 30px;
+    color: white;
+    border: none;
+    cursor: pointer;
+	display: inline-flex;
+	position: absolute;
+}
+
+.search-bar{
+	display: inline;
+	margin-left: 43px;
+}
+
+/* MODAL-FORM */
+.main-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+	
+form {
+	padding: 20px;
+	background: #fff;
+	box-shadow: 0 2px 5px #ccc; 
+}
+
+input, label{
+	display: block;
+}
+
+label{
+	text-align: left;
+}
+	
+input {
+	width: 200px;
+}
+
+	
+input[type="text"]{
+	padding: 8px 5px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	outline: none;
+}
+
+input[type="text"]:hover{
+	outline: none;
+	border: 1px solid #979797;
+}
+
+input[type="password"]{
+	padding: 8px 5px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	outline: none;
+}
+
+input[type="password"]:hover{
+	outline: none;
+	border: 1px solid #979797;
+}
+
+input[type = "file"]{
+	border: none;
+	outline: none;
+}
+
+br{
+	clear: both;
+}
+
+.input-left{
+	float:left;
+	margin-right:20px;
+	
+}
+
+.input-right{
+	float: left;
+	margin-left: 55px;
+}
+
+.btn-block {
+	text-align: center;
+}
+
+section{
+	display: flex;
+}
+
+.submit-btn{
+    margin-left: 20px;
+    padding: 10px 30px;
+    background-color: #8a080a;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+.cancel-btn{
+    margin-left: 5px;
+    padding: 10px 30px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+.modal-container{
+	background-color: rgba(0, 0, 0, 0.3);
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.3s ease;
+}
+
+.modal-container.show{
+	pointer-events: auto;
+	opacity: 1;
+}
+
+/* PAGINATION */
+.pagination{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+.pagination ul{
+	display: flex;
+	background: #dddddd;
+	padding: 3px;
+	border-radius: 50px;
+}
+
+.pagination ul li{
+	list-style: none;
+	line-height: 45px;
+	text-align: center;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.pagination ul li.num{
+	height: 45px;
+	width: 45px;
+}
+
+.pagination ul li.dots{
+	font-size: 22px;
+	cursor: default;
+}
+
+.pagination ul li.btn{
+	padding: 0 20px;
+}
+
+.pagination ul li.prev{
+	border-radius: 25px 5px 5px 25px;
+}
+
+.pagination ul li.next{
+	border-radius: 5px 25px 25px 5px;
+}
+
+.pagination ul li.active,
+.pagination ul li.num:hover,
+.pagination ul li.btn:hover{
+	background: #A20C0E;
+	color: #fff;
+}
