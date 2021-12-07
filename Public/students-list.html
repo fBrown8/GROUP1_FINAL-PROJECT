@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Faculty List </title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/students-list.css">
+</head>
+<body>
+	<input type="checkbox" id="check" checked="false">
+	<!--header area start-->
+	<header>
+		<label for = "check">
+			<i class="fas fa-bars" id="menuBtn"></i>
+		</label>
+		<div class ="leftArea">
+			<!--logo area-->
+		</div>
+	</header>
+	<!--header area end-->
+	<!--sidebar start-->
+	<nav class = "sideBar">
+		<div class = "userInfo">
+			<img src="pics/user_icon.png" class = "userIcon" alt="">
+			<h4>Admin</h4>
+		</div>
+			<a href="admin-dashboard.html" class="dboard"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+			<a href="faculty-list.html" class="faculty"><i class="fas fa-users"></i><span>Faculty</span></a>
+			<a href="students-list.html" class="student"><i class="fas fa-user-graduate"></i><span>Students</span></a>
+			<a href="questionnaire.html" class="questionnaire"><i class="fas fa-stream"></i></i><span>Questionnaire</span></a>
+			<a href="admin-records.html" class="rcord"><i class="fas fa-chart-bar"></i><span>Records</span></a>
+			<a href="index.html" class = "logout"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
+	</nav>
+	<script src="js/navbar.js"></script>
+	<!--sidebar end-->
+
+<!-- CONTENT AREA -->
+<div class = "content">
+	<h1>Students List</h1>
+		<hr>
+		<div class="search-bar">
+			<span>Search by ID:</span>
+			<input type="text" class = "search-bar" name="search-button" id="search" placeholder="Search..." onkeyup="searchFun()">
+		</div>
+		<button class = "add-new-btn" id = "open">+ Add New</button>
+<!--Pop up form-->
+<div class="modal-container" id="modal_container" >
+	<div class="modal">
+			<form action = "/api/students" method= "post">
+				<h3>Add New Student</h3>
+			<section>
+			  <div class="input-name">
+				<label for="name">First Name</label>
+				<input id="name" type="text" value="" name="First_Name" placeholder="Enter First Name" required>
+			  </div>
+			
+			  <div class="input-subject">
+				<label for="email">Last Name</label>
+				<input id="email" type="text" value="" name="Last_Name" placeholder="Enter Last Name" required>
+			  </div>
+			  <br>
+			</section>
+			
+			<section>
+				<div class="input-name">
+					<label for="name">Student ID</label>
+					<input id="name" type="text" value="" name="Student_Number" placeholder="Enter Student ID" required> 
+				  </div>
+				  
+				  <div class="input-gender">
+					<label for="gender">Gender</label>
+					<input id="gender" type="text" value="" name="Gender" placeholder="Enter Gender" required>
+				  </div>
+		
+				  <div class="input-subject">
+					<label for="email">Class/Section</label>
+					<input id="email" type="text" value="" name="Grade_Level" placeholder="Enter Class/Section" required>
+				  </div>
+				  <br>
+			
+			</section>
+			<div class="btn-block">
+				<button class="cancel-btn" id="close" type="submit">Cancel</button>
+				<button class="submit-btn" type="submit">Submit</button>
+			</div>
+			</form>
+	</div>
+</div>
+<script src="js/add-new-form.js"></script>
+
+<!--FACULTY TABLE-->
+		<table class="faculty-table">
+			<thead>
+			  <tr>
+				<th>Student ID</th>
+				<th>Last Name</th>
+				<th>First Name</th>
+				<th>Section</th>
+				<th>Action</th>
+			  </tr>
+			</thead>
+			<tbody id = "table_body">
+			<!--INSERT DATABASE CODE HERE-->
+			<!--TEMPLATE LANG TONG NASA BABA-->
+			</tbody>
+		  </table>
+<script src = "js/table.js"></script>
+
+<!--PAGINATION-->
+<div class="pagination">
+	<ul>
+		<li class = "prev btn"><span><i class="fas fa-angle-left"></i> Prev</span></li>
+		<li class="num">1</li>
+		<li class="num">2</li>
+		<li class="dots">...</li>
+		<li class="num">4</li>
+		<li class="num">5</li>
+		<li class="dots">...</li>
+		<li class="num">7</li>
+		<li class = "next btn"><span>Next </span><i class="fas fa-angle-right"></i></li>
+	</ul>
+</div>
+
+<script src=""></script> <!--script for page navigation-->
+</div>
+
+
+<!--CONTENT AREA END-->
+<script src = "./js/add.user.js"></script>
+<script src= "./js/student.list.js"></script>
+</body>
+</html>

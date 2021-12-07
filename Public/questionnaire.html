@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Questionnaire </title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/questionnaire.css">
+</head>
+<body>
+	<input type="checkbox" id="check" checked="false">
+	<!--header area start-->
+	<header>
+		<label for = "check">
+			<i class="fas fa-bars" id="menuBtn"></i>
+		</label>
+		<div class ="leftArea">
+			<!--<img src="pics/stma_logo.png" alt="stma logo">-->
+		</div>
+	</header>
+	<!--header area end-->
+	<!--sidebar start-->
+	<nav class = "sideBar">
+		<div class = "userInfo">
+			<img src="pics/user_icon.png" class = "userIcon" alt="">
+			<h4>Admin</h4>
+		</div>
+		  <a href="admin-dashboard.html" class="dboard"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+		  <a href="faculty-list.html" class="faculty"><i class="fas fa-users"></i><span>Faculty</span></a>
+		  <a href="students-list.html" class="student"><i class="fas fa-user-graduate"></i><span>Students</span></a>
+		  <a href="questionnaire.html" class="questionnaire"><i class="fas fa-stream"></i><span>Questionnaire</span></a>
+		  <a href="admin-records.html" class="rcord"><i class="fas fa-chart-bar"></i><span>Records</span></a>
+		<a href="index.html" class = "logout"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
+	</nav>
+	<script src="js/navbar.js"></script>
+	<!--sidebar end-->
+
+<!-- CONTENT AREA -->
+<div class = "content">
+    <h1>Questionnaire</h1>
+    <hr>
+    <button class = "add-new-btn" id = "open">+ Add New</button>
+<!--Pop up form-->
+<div class="modal-container" id="modal_container" >
+  <div class="modal">
+      <form action = "/api/questions" method= "post">
+        <h3>Category</h3>
+      <section>
+        <div class="input-name">
+        <label for="Comment"></label>
+        <input id="Comment" type="text" value="" name="category" placeholder="Enter Category" required>
+        </div>
+        <section>
+          <h3>Question</h3>
+          <div class="input-name">
+          <label for="Comment"></label>
+          <input id="Comment" type="text" value="" name="question" placeholder="Enter Question" required>
+          </div>
+        </section>
+            <br>
+            <div class="btn-block">
+
+                <button class="cancel-btn" id = "close" type="submit">Cancel</button>
+                <button class="submit-btn" type="submit">Add</button>
+            </div>
+    
+            </form>
+    </div>
+</div>
+<script src="js/add-new-form.js"></script>
+
+<!--FACULTY TABLE-->
+    <table class="faculty-table" id = "table">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Question</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id = "table_body">
+        <!--INSERT DATABASE CODE HERE-->
+        <!--TEMPLATE LANG TONG NASA BABA-->
+        </tbody>
+      </table>
+
+</div>
+
+
+<!--CONTENT AREA END-->
+<script src= "./js/question.js"></script>
+</body>
+</html>
