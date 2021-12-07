@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "NewBackend",
   "version": "1.0.0",
@@ -25,3 +26,32 @@
     "passport-local": "^1.0.0"
   }
 }
+=======
+{
+  "name": "NewBackend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "-": "0.0.1",
+    "axios": "^0.24.0",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.14",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0"
+  }
+}
+>>>>>>> 5a74dd4bafa6d37842539b93bf10ebc687e5788f
