@@ -35,4 +35,4 @@ app.set('views', path.resolve(__dirname, "Public"));
 app.use('/', require('./server/routes/router'));
 
 
-app.listen(PORT, ()=> { console.log(`Server is running on http://localhost:${PORT}`)});
+app.listen(PORT, ()=> { console.log(`Server is running on http://localhost:${PORT}`)}); 
