@@ -12,7 +12,7 @@ let validateLogin = async (e) => {
 
     else if (passwordArray[0] == 01) {
         console.log('Success!');
-        const response = await fetch("https://teacher-evaluation-system.herokuapp.com//api/students");
+        const response = await fetch("https://teacher-evaluation-system.herokuapp.com/api/students");
         const data = await response.json();
         console.log(data);
         data.forEach((students) => {
@@ -24,7 +24,7 @@ let validateLogin = async (e) => {
     }
     else if (passwordArray[0] == 02) {
         console.log('Successs!');
-        const response = await fetch("https://teacher-evaluation-system.herokuapp.com//api/teachers");
+        const response = await fetch("https://teacher-evaluation-system.herokuapp.com/api/teachers");
         const data = await response.json();
         console.log(data);
         data.forEach((teachers) => {
