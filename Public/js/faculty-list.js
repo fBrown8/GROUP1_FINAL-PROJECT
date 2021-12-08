@@ -1,4 +1,4 @@
-fetch ("http://localhost:3000/api/teachers").then((data) => {
+fetch ("https://teacher-evaluation-system.herokuapp.com/api/teachers").then((data) => {
     //console.log(data);
     return data.json(); //converted to object
 }).then((objectData) => {
