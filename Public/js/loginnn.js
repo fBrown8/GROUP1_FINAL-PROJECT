@@ -6,7 +6,7 @@ let validateLogin = async (e) => {
     e.preventDefault();
     let passwordArray = password.value.split("-");
     if (password.value == 'admin' && username.value == 'admin') {
-        window.location.href = "http://localhost:3000/admin-dashboard.html";
+        window.location.href = "https://teacher-evaluation-system/admin-dashboard.html";
         alert("Login successfully");
     }
 
