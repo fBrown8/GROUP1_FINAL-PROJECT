@@ -10,7 +10,7 @@ const app = express();
 
 dotenv.config({path: 'config.env'})
 
-const PORT = process.env.PORT || teacher-evaluation-system.herokuapp.com;
+const PORT = process.env.PORT || 8080;
 
 app.use(express.static(__dirname + "/Public"));
 
